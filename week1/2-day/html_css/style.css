@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: inline-block;
+    padding: 50px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 90%;
+}
+
+/* NAVIGATION */
+.logo1 {
+    width: 20%;
+    float: left;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
+.logo2 {
+    width: 8%;
+    float: right;
+    padding: 15px;
+}
+
+/* BANNER */
+.banner {
+    display: relative;
+    width: 100%;
+    filter: brightness(50%);
+    margin: 0 50px;
+}
+
+h1 {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 250%;
+    font-weight: 500;
+}
+
+.btn {
+    position: absolute;
+    top: 84%;
+    left: 39%;
+    background: rgb(255, 196, 0);
+    color: rgb(228, 104, 3);
+    padding: 5px 50px;
+    border: 3px solid rgb(228, 104, 3);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+/* FEATURES */
+.boxes img {
+    width: 8%;
+}
+/* SORTING ONE IMAGE WITH ITS TEXTS STARTS HERE*/
+.img1 {
+    margin: 30px;
+    float: left;
+}
+
+.pp {
+    margin: 30px -15px;
+    float: left;
+    width: 350px;
+    height: 290px;
+}
+
+/* SORTING ONE IMAGE WITH ITS TEXTS END HERE*/
+
+.boxes {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background: rgb(214, 212, 212);
+    margin: -5px 0 -17px 50px;
+}
+
+.box1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.box2 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.box3 {
+    position: absolute;
+    bottom: -65%;
+    left: 5%;
+}
+
+.box4 {
+    position: absolute;
+    bottom: -65%;
+    right: 5%;
+}
+/* FOOTER */
+
+.footer {
+    background: gray;
+    width: 100%;
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    padding: 28px 50px 13px 50px;
+    margin: -5px 0 -17px 50px;
+}

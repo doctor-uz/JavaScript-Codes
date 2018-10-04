@@ -10,4 +10,4 @@ function num(n) {
         console.log(n);
     }
 }
-num("sss");
+num(-1);

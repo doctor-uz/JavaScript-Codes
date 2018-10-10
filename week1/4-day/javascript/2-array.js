@@ -1,4 +1,4 @@
-var initialArr = [1, 2, 3, 4];
+var initialArr = [1, s, 3, 4];
 
 console.log("This is initial array: ", initialArr);
 

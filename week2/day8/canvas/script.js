@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canv");
 var ctx = canvas.getContext("2d");
 
-// #################################################
+// ##################################################
 ctx.beginPath(); // drawing the circle
 
 ctx.strokeStyle = "green";

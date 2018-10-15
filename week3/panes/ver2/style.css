@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative; /*to center it*/
+    width: 700px; /*to make position relative take effect*/
+    height: 450px;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.left,
+.right {
+    position: absolute; /*to make them both stack on left of each other and to move the left one*/
+    left: 0;
+    object-fit: cover;
+}
+
+png,
+img {
+    height: 450px;
+    width: 700px;
+}
+
+.right {
+    z-index: 1;
+}
+
+.left {
+    z-index: 2;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 450px;
+    background-color: grey;
+    opacity: 0.8;
+    z-index: 3;
+    margin: 0;
+}

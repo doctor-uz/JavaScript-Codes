@@ -1,0 +1,46 @@
+.page-container {
+    margin: 20px;
+}
+
+/* horizontal panel*/
+
+.panel-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid silver;
+    overflow: hidden;
+    width: 900px;
+
+    /* avoid browser level touch actions */
+    xtouch-action: none;
+}
+
+.panel-left {
+    flex: 0 0 auto;
+    /* only manually resize */
+    /* padding: 5px; */
+    width: 18px;
+    min-height: 300px;
+    /* min-width: 10px; */
+    /* white-space: nowrap; */
+    background-image: url("code.png");
+}
+
+.panel-right {
+    flex: 1 1 auto;
+    /* resizable */
+    /* padding: 10px; */
+    width: 18px;
+    min-height: 300px;
+    /* min-width: 200px; */
+    background-image: url("parthenon.jpg");
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 18px;
+    background-color: blue;
+
+    min-height: 300px;
+    cursor: col-resize;
+}

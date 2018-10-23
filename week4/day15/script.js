@@ -14,7 +14,6 @@
                 if (data.next) {
                     moreVal = 20;
                     $("#more").show();
-                    console.log("data.next");
                 } else {
                     $("#more").hide();
                 }
@@ -85,14 +84,6 @@
                 }
 
                 var resultHtml = "";
-
-                //nextUrl = data.next;
-
-                if (data.items.length == 0) {
-                    resultHtml +=
-                        "<div class='error'> No more results found! </div>";
-                    $("#more").hide();
-                }
 
                 for (var i = 0; i < data.items.length; i++) {
                     if (data.items[i].images[0]) {

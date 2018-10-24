@@ -52,7 +52,7 @@
                 ////here starts commits
                 $(".repo-name").on("click", function(e) {
                     var endPointCommits =
-                        "/repos/" + $(e.target).html() + "/commits?per_page=5";
+                        "/repos/" + $(e.target).html() + "/commits?per_page=10";
                     // delete existing commits
                     if (
                         $(e.target)

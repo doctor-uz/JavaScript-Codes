@@ -2,6 +2,7 @@ const fs = require("fs");
 
 var myPath = __dirname + "/files";
 
+//First read what do we have
 function reading(path) {
     var obj = {};
     var directory = fs.readdirSync(path);
@@ -17,6 +18,8 @@ function reading(path) {
     }
     return obj;
 }
+
+//Create JSON file
 fs.writeFileSync(
     __dirname + "/files.json",
     JSON.stringify(reading(myPath), null, 4)

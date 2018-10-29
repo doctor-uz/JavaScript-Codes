@@ -1,26 +1,26 @@
 {
-    "README.md": 12,
+    "README.md": "12 Bytes",
     "part1": {
         "a": {
             "images": {
-                "cats.png": 573350,
-                "kitty1_150x150.jpg": 9279,
-                "kitty2_150x150.jpg": 14355,
-                "kitty3_150x150.jpg": 13387
+                "cats.png": "573350 Bytes",
+                "kitty1_150x150.jpg": "9279 Bytes",
+                "kitty2_150x150.jpg": "14355 Bytes",
+                "kitty3_150x150.jpg": "13387 Bytes"
             },
-            "index.html": 241,
-            "stylesheet.css": 40
+            "index.html": "241 Bytes",
+            "stylesheet.css": "40 Bytes"
         },
         "b": {
             "images": {
-                "boxes.png": 156804
+                "boxes.png": "156804 Bytes"
             },
-            "index.html": 243,
-            "stylesheet.css": 39
+            "index.html": "243 Bytes",
+            "stylesheet.css": "39 Bytes"
         }
     },
     "part2": {
-        "index.html": 160,
-        "script.js": 1998
+        "index.html": "160 Bytes",
+        "script.js": "1998 Bytes"
     }
 }

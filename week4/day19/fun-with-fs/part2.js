@@ -13,7 +13,7 @@ function reading(path) {
         if (stats.isDirectory()) {
             obj[directory[i]] = reading(newPath);
         } else {
-            obj[directory[i]] = stats.size;
+            obj[directory[i]] = stats.size + " Bytes";
         }
     }
     return obj;

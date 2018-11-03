@@ -3,13 +3,13 @@ $.ajax({
     method: "GET",
     success: function(links) {
         var html = "";
-        var content;
+        var headline;
         var url;
 
         for (var i = 0; i < links.length; i++) {
-            content = links[i].headline;
+            headline = links[i].headline;
             url = links[i].url;
-            html += "<a class='top' href=" + url + ">" + content + "</a>";
+            html += "<a class='top' href=" + url + ">" + headline + "</a>";
         }
 
         $("#headlines").html(html);

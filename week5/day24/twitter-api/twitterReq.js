@@ -51,7 +51,7 @@ module.exports.getToken = function getToken(cb) {
 // --------------- you will have to write these!
 
 module.exports.getTweets = function getTweets(bToken, cb) {
-    console.log("bToken: ", bToken);
+    // console.log("bToken: ", bToken);
     // var concatenatedCreds = secrets.consumerKey + ":" + secrets.consumerSecret;
     // var encodedCreds = new Buffer(concatenatedCreds).toString("base64");
 
@@ -106,8 +106,8 @@ module.exports.filterTweets = function filterTweets(tweets) {
 
     for (var i = 0; i < tweets.length; i++) {
         if (tweets[i].entities.urls.length === 1) {
-            let myObj = {};
-            myObj.content = tweets[i].text.replace(
+            var myObj = {};
+            myObj.headline = tweets[i].text.replace(
                 /(?:https?|ftp):\/\/[\n\S]+/g,
                 ""
             );

@@ -72,6 +72,30 @@ loader.load("assets/fonts/helvetiker_regular.typeface.json", function(font) {
     fontMesh.position.set(-30, 15, 1);
     fontMesh.rotation.x += 0.005;
     scene.add(fontMesh);
+
+    gui.addColor(controls, "textColor").onChange(function(e) {
+        fontMesh.material.color = new THREE.Color(e);
+    });
+
+    // var Configuracion = function() {
+    //     this.color = "#ffae23";
+    // };
+    // var conf = new Configuracion();
+
+    // gui.addColor(conf, "color").onChange(function(newcolor) {
+    //     //the return value by the chooser is like as: #ffff so
+    //     //remove the # and replace by 0x
+    //     // colorValue = colorValue.replace("#", "0x");
+    //     //create a Color
+    //     var colorObject = new THREE.Color(newcolor);
+    //     //set the color in the object
+    //     // console.log("Color: ", conf);
+    //     console.log("real color is: ", conf.color);
+    //     newcolor = conf.color.replace("#", "0x");
+    //     console.log("New color", newcolor);
+    // console.log("This is configuracion: ", conf);
+    // this.fontMesh.material.color = new THREE.Color(this.newcolor);
+    // });
 });
 
 //=======ORBIT controls =================================================
@@ -98,32 +122,13 @@ scene.background = skyBox;
 var controls = new function() {
     this.guiRotationX = 0.005;
     this.guiRotationY = 0.005;
+    this.textColor = 1;
 }();
 
 var gui = new dat.GUI();
 gui.add(controls, "guiRotationX", 0, 0.2);
 gui.add(controls, "guiRotationY", 0, 0.2);
-// gui.add(controls, "color");
-
-var Configuracion = function() {
-    this.color = "#ffae23";
-};
-var conf = new Configuracion();
-
-gui.addColor(conf, "color").onChange(function(newcolor) {
-    //the return value by the chooser is like as: #ffff so
-    //remove the # and replace by 0x
-    // colorValue = colorValue.replace("#", "0x");
-    //create a Color
-    var colorObject = new THREE.Color(newcolor);
-    //set the color in the object
-    // console.log("Color: ", conf);
-    console.log("real color is: ", conf.color);
-    newcolor = conf.color.replace("#", "0x");
-    console.log("New color", newcolor);
-    // console.log("This is configuracion: ", conf);
-    // this.fontMesh.material.color = new THREE.Color(this.newcolor);
-});
+gui.add(controls, "textColor", 0, 1);
 
 //==========end dat.GUI ===========================
 

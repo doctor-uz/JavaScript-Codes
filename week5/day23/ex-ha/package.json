@@ -14,6 +14,6 @@
     "chalk-animation": "^1.6.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^5.3.1"
   }
 }
